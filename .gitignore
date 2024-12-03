@@ -1,0 +1,6 @@
+archive/
+build/
+sdkconfig
+sdkconfig.old
+notes.html
+notes.md
