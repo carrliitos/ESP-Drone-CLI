@@ -40,11 +40,6 @@ between the user terminal (Mobile/PC) and the ESP-Drone.
  terminal to establish a direct connection.
    - This setup avoids reliance on external routers and ensures low-latency, 
    point-to-point communication.
-
-This structure is highly modular, ensuring clear separation of concerns between 
-layers. The combination of CRTP and UDP over Wi-Fi allows efficient and 
-responsive communication, which is critical for drone operation. 
-
 ---
 
 ### **Data Flow**
