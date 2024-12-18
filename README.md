@@ -122,5 +122,34 @@ Terminal (Mobile/PC)                                                        ESP-
 - **SSID**: ESP-DRONE_6055F9DA14DD
 - **MAC Address**: 60:55:F9:DA:14:DD
 - **Password**: 12345678
-- **IP Address**: 192.168.43.41
+- **IP Address**: 192.168.43.42
 - **Port**: 2390
+
+### Per ESP-Drone documenation
+
+UDP Communication
+------------------
+
+UDP Port
+~~~~~~~~~~
+
+=====================   =================== =======================
+App                     Direction           ESP-Drone
+=====================   =================== =======================
+192.168.43.42::2399     TX/RX               192.168.43.42::2390
+=====================   =================== =======================
+
+UDP Packet Structure
+~~~~~~~~~~~~~~~~~~~~
+
+```
+/* Frame format:
+ * +=============+-----+-----+
+ * | CRTP                      |   CKSUM   |
+ * +=============+-----+-----+
+ */
+```
+
+- The packet transmitted by the UDP: CRTP + verification information. 
+- CRTP: As defined by the CRTP packet structure, it contains Header and Data, as detailed in the CRTP protocol section. 
+- CKSUM: the verification information. Its size is 1 byte, and this CKSUM is incremented by CRTP packet byte.
