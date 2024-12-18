@@ -4,3 +4,5 @@ sdkconfig
 sdkconfig.old
 notes.html
 notes.md
+main/python
+main/__pychache__
