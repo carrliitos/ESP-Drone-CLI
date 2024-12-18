@@ -1,13 +1,3 @@
-/*
- * main.c
- *
- * Created on:         2024-12-02 06:00:00
- *     Author:         carlitos (benzon.salazar@gmail.com)
- *
- * Last Modified by:   carlitos
- * Last Modified time: 2024-12-03 00:20:20
- */
-
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "nvs_flash.h"
