@@ -23,7 +23,7 @@ void app_main(void) {
   wifi_app_start();
 
   ESP_LOGI(TAG, "**************|| Initialize the UDP socket ||**************");
-  udp_link_init();
+  xTaskCreate(udp_client_task, "udp_client_task", 4096, NULL, 5, NULL);
 
   // ESP_LOGI(TAG, "**************|| Starting in autonomous mode ||**************");
   // start_autonomous_control();

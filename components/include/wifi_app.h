@@ -1,13 +1,3 @@
-/*
- * wifi_app.h
- *
- * Created on:         2024-12-02 13:06:31
- *     Author:         carlitos (benzon.salazar@gmail.com)
- *
- * Last Modified by:   carrliitos
- * Last Modified time: 2024-12-07 20:05:55
- */
-
 #ifndef MAIN_WIFI_APP_H
 #define MAIN_WIFI_APP_H
 

@@ -1,13 +1,3 @@
-/*
- * http_server.c
- *
- * Created on:         2024-12-02 16:08:01
- *     Author:         carlitos (benzon.salazar@gmail.com)
- *
- * Last Modified by:   carrliitos
- * Last Modified time: 2024-12-03 18:18:34
- */
-
 #include "esp_http_server.h"
 #include "esp_log.h"
 #include "esp_err.h"

@@ -1,13 +1,3 @@
-/*
- * drone_control.c
- *
- * Created on:         2024-12-02 23:39:05
- *     Author:         carlitos (benzon.salazar@gmail.com)
- *
- * Last Modified by:   carlitos
- * Last Modified time: 2024-12-02 23:47:58
- */
-
 #include "drone_control.h"
 #include "esp_udp_link.h"
 #include "esp_log.h"
@@ -28,12 +18,14 @@ void handle_input(char key) {
     default: return;
   }
 
-  control_packet.thrust = control_packet.thrust > 255 ? 255 : control_packet.thrust;
-  control_packet.thrust = control_packet.thrust < 0 ? 0 : control_packet.thrust;
+  // Ensure thrust values remain within bounds
+  if (control_packet.thrust > 255) control_packet.thrust = 255;
+  if (control_packet.thrust < 0) control_packet.thrust = 0;
 
-  ESP_LOGI(TAG, "Updated CRTP: Thrust=%d, Roll=%d, Pitch=%d, Yaw=%d", control_packet.thrust, control_packet.roll, control_packet.pitch, control_packet.yaw);
+  ESP_LOGI(TAG, "Updated CRTP: Thrust=%d, Roll=%d, Pitch=%d, Yaw=%d",
+                control_packet.thrust, control_packet.roll, control_packet.pitch, control_packet.yaw);
 
-  udp_link_send(&control_packet, sizeof(control_packet));
+  udp_link_send((char *)&control_packet, sizeof(control_packet));
 }
 
 // Start drone control (relies on UDP link)

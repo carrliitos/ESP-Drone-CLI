@@ -1,13 +1,3 @@
-/*
- * http_server.h
- *
- * Created on:         2024-12-02 16:07:48
- *     Author:         carlitos (benzon.salazar@gmail.com)
- *
- * Last Modified by:   carrliitos
- * Last Modified time: 2024-12-03 18:18:39
- */
-
 #ifndef MAIN_HTTP_SERVER_H_
 #define MAIN_HTTP_SERVER_H_
 

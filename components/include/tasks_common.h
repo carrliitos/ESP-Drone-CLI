@@ -1,10 +1,3 @@
-/*
- * tasks_common.h
- *
- * Created on: 2024-11-09
- *     Author: Benzon Carlitos Salazar
- */
-
 #ifndef MAIN_TASKS_COMMON_H_
 #define MAIN_TASKS_COMMON_H_
 

@@ -1,13 +1,3 @@
-/*
- * drone_control.h
- *
- * Created on:         2024-12-02 23:38:27
- *     Author:         carlitos (benzon.salazar@gmail.com)
- *
- * Last Modified by:   carlitos
- * Last Modified time: 2024-12-02 23:48:50
- */
-
 #ifndef MAIN_DRONE_CONTROL_H_
 #define MAIN_DRONE_CONTROL_H_
 
