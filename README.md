@@ -127,11 +127,9 @@ Terminal (Mobile/PC)                                                        ESP-
 
 ### Per ESP-Drone documenation
 
-UDP Communication
-------------------
+#### UDP Communication
 
-UDP Port
-~~~~~~~~~~
+**UDP Port**
 
 =====================   =================== =======================
 App                     Direction           ESP-Drone
@@ -139,8 +137,7 @@ App                     Direction           ESP-Drone
 192.168.43.42::2399     TX/RX               192.168.43.42::2390
 =====================   =================== =======================
 
-UDP Packet Structure
-~~~~~~~~~~~~~~~~~~~~
+**UDP Packet Structure**
 
 ```
 /* Frame format:
