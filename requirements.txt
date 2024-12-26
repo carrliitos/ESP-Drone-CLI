@@ -1,6 +1,6 @@
 bidict==0.23.1
 blinker==1.9.0
-cflib==0.1.27
+cflib @ git+https://github.com/leeebo/crazyflie-lib-python.git@a430283a3b608db7c0b3227aa37d7120858c25ef
 click==8.1.7
 Flask==3.1.0
 Flask-Cors==5.0.0
